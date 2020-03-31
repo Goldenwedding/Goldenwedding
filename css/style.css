@@ -1,0 +1,221 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+
+.navbar {
+    transition: all 0.4s;
+}
+
+.navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+
+    marquee{
+        background-color: yellow;
+        color:red;
+        font-size: medium;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 12%;
+        position: fixed;
+    }
+
+}
+
+@media (max-width: 650px) {
+ 
+    marquee{
+        background-color: yellow;
+        color:red;
+        font-size: medium;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 15%;
+       
+    }
+}    
+
+
+/*
+*
+* ==========================================
+* FOR DEMO PURPOSES
+* ==========================================
+*
+*/
+
+
+
+body {
+    /* min-height: 110vh; */
+    /* background-color: #4ca1af;
+    background-image: linear-gradient(135deg, #4ca1af 0%, #c4e0e5 100%); */
+}
+
+
+
+/*
+*
+* ==========================================
+* FOR important message (marquee)
+* ==========================================
+*
+*/
+
+marquee{
+    background-color: yellow;
+    color:red;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    position:sticky;
+    top:0;
+    z-index: -1;
+    
+}
+
+
+/*
+*
+* ==========================================
+* Carosuel Background
+* ==========================================
+*
+*/
+.carousel-item {
+    height: 100vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+  }
+
+  .display-4 , .lead{
+      color:black;
+      font-weight: bolder;
+  }
+
+
+
+
+ /*
+*
+* ==========================================
+* Fixed Social sidebar
+* ==========================================
+*
+*/
+#fixed-social {
+    position:fixed;
+    top: 400px;
+ }
+ 
+ #fixed-social a {
+    color: #fff;
+    display: block;
+    height: 40px;
+    position: relative;
+    text-align:center;
+    line-height: 40px;
+    width: 40px;
+    margin-bottom: 1px;
+    z-index: 2;
+    border-radius: 20px;
+    padding-top: 10px;
+ }
+ #fixed-social a:hover>span{
+     visibility: visible;
+   left: 41px;
+   opacity: 1;
+ } 
+ #fixed-social a span {
+     line-height: 40px;
+     left: 60px;
+     position: absolute;
+     text-align: center;
+     width: 120px;
+     visibility: hidden;
+     transition-duration: 0.5s;
+     z-index: 1;
+     opacity: 0;
+     border-radius: 20px;
+     bottom:0;
+   
+ }
+  .fixed-facebook{
+      background-color: #00AAE5;
+  }
+  .fixed-facebook span{
+     background-color: #00AAE5;
+  }
+  .fixed-twitter{
+     background-color: #7D3895;
+ 
+  }
+  .fixed-twitter span{
+      background-color: #7D3895;
+  }
+ 
+  .fixed-linkedin{
+     background-color: #FFC41E;
+ 
+  }
+  .fixed-linkedin span{
+      background-color: #FFC41E;
+  }
+  .fixed-instagram{
+     background-color: #ED2B29;
+ 
+  }
+  .fixed-instagram span{
+      background-color: #ED2B29;
+  }
+
+ /*end fixed social*/

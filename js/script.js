@@ -18,7 +18,7 @@ $('.carousel').carousel({
 
 
 // =================================
-// -------Testominals------------
+// -------Testimonials------------
 // =================================
 
   // Returns an array of maxLength (or less) page numbers
@@ -66,7 +66,7 @@ function getPageList(totalPages, page, maxLength) {
   $(function() {
     // Number of items and limits the number of items per page
     var numberOfItems = $("#jar .content").length;
-    var limitPerPage = 2;
+    var limitPerPage = 4;
     // Total pages rounded upwards
     var totalPages = Math.ceil(numberOfItems / limitPerPage);
     // Number of buttons at the top, not counting prev/next,
